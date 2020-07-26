@@ -32,19 +32,23 @@ _Para ejecutar el programa, se debe seguir los siguientes pasos manualmente:_
 
 _1) Posicionarse en la carpeta o directorio del Apache Tomcat._
    _Por defecto, puede ser la carpeta **apache-tomcat-8.0.27**_
+   
 _2) Crear una carpeta o directorio dentro de la carpeta **webapps**._
    _por defecto se nombra como **soapparalela**._
+   
 _3) Se descomprime el archivo soapparalela.war en la carpeta creada._
+
 _4) Desde la carpeta de Apache Tomcat, se debe ingresar el siguiente_
    _comando para activar el servidor:_
 ```
 bin/startup.sh
 ```
+
 _5) Por último, se debe abrir un navegador e ingresar el siguiente link,_
    _con el fin de verificar su funcionamiento:_ 
    **localhost:8080/soapparalela**
 _ Listo, el servidor ya se encuentra abierta y podrá ingresar datos con SOAPUI._
-_ Los datos que se ingresan son tres, los cuales son:
+_ Los datos que se ingresan son tres, los cuales son:_
 * Nombre del archivo.
 * Tipo mime del archivo.
 * Contenido del archivo, encodeado en base64.
