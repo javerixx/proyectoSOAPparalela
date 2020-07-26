@@ -46,7 +46,9 @@ bin/startup.sh
 
 _5) Por último, se debe abrir un navegador e ingresar el siguiente link,_
    _con el fin de verificar su funcionamiento:_ 
+   
    **localhost:8080/soapparalela**
+
 _Listo, el servidor ya se encuentra abierta y podrá ingresar datos con SOAPUI._
 _Los datos que se ingresan son tres, los cuales son:_
 * Nombre del archivo.
