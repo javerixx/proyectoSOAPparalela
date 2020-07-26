@@ -55,6 +55,11 @@ _Los datos que se ingresan son tres, los cuales son:_
 * Tipo mime del archivo.
 * Contenido del archivo, encodeado en base64.
 
+_En caso de quiera cerrar el puerto 8080 y no se pueda por salir de la ejecución, se debe ingresar el siguiente comando:_
+```
+fuser -k 8080/tcp
+```
+
 ## Ejecutando las pruebas ⚙️
 
 _En SOAPUI, se ingresan los 3 datos mencionados anteriormente y lo ejecuta._
