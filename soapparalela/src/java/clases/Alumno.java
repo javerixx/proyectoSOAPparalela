@@ -2,14 +2,12 @@ package clases;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 
 public class Alumno {
     //Clase alumno   
     String rut; 
     // a, rut del alumno quien está ingresando la carrera
     ArrayList<Ponderacion> ponderaciones;
-
     // b, arreglo de tipo ponderacion del alumno,
     // siendo que, después de crearlo, debe estar ordenado de mayor a menor
     // según su prioridad.
@@ -18,14 +16,11 @@ public class Alumno {
     public Alumno(String a, ArrayList<Ponderacion> b) {
         rut = a;
         ponderaciones = new ArrayList<>(b);
-        //Collections.copy(ponderaciones, b);
-        //                  copia,  origen
+
     }
     public Alumno(Alumno x) {
         rut = x.getRut();
         ponderaciones = new ArrayList<>(x.getPonderacionesfinales());
-        //Collections.copy(ponderaciones, x.getPonderacionesfinales());
-        //                   copia              origen     
     }
 
     //Getters de variables de la misma clase
@@ -41,7 +36,6 @@ public class Alumno {
     }
     public void setPonderacionesfinales (ArrayList<Ponderacion> b) {
         ponderaciones = new ArrayList<>(b);
-        //Collections.copy(ponderaciones, b);
     }
     public void agregarPonderacion(Ponderacion p){
         ponderaciones.add(p);

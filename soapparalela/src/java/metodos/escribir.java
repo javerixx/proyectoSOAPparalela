@@ -49,118 +49,62 @@ public class escribir {
 
     public Carrera[] datoscarreras() { // Funcion que retorna el arreglo de clase carrera definidos por la UTEM
         //Agregando todas las carreras al iniciar la ejecución del servidor
-        /*Carrera c1 = new Carrera(21089, "Administracion Publica", 0.15, 0.2, 0.3, 0.25, 0.1, 450, 0, 35, 625.8, 513);
-        arreglocarrera[0] = c1;
-        Carrera c2 = new Carrera(21002, "Bibliotecologia y Documentacion", 0.2, 0.2, 0.4, 0.1, 0.1, 450, 0, 35, 675.3, 453.6);
-        arreglocarrera[1] = c2;
-        Carrera c3 = new Carrera(21012, "Contador Publico y Auditor", 0.2, 0.2, 0.3, 0.15, 0.15, 450, 0, 80, 635.55, 452.2);
-        arreglocarrera[2] = c3;
-        Carrera c4 = new Carrera(21048, "Ingenieria Comercial", 0.1, 0.2, 0.3, 0.3, 0.1, 450, 0, 125, 652.9, 496.9);
-        arreglocarrera[3] = c4;
-        Carrera c5 = new Carrera(21015, "Ingenieria en Administracion Agroindustrial", 0.1, 0.2, 0.3, 0.3, 0.1, 450, 0, 30, 628.8, 461.8);
-        arreglocarrera[4] = c5;
-        Carrera c6 = new Carrera(21081, "Ingenieria en Comercio Internacional", 0.1, 0.2, 0.3, 0.3, 0.1, 450, 0, 90, 637.2, 458.8);
-        arreglocarrera[5] = c6;
-        Carrera c7 = new Carrera(21082, "Ingenieria en Gestion Turistica", 0.1, 0.2, 0.3, 0.3, 0.1, 450, 0, 25, 659.4, 448.1);
-        arreglocarrera[6] = c7;
-        Carrera c8 = new Carrera(21047, "Arquitectura", 0.15, 0.25, 0.2, 0.2, 0.2, 450, 0, 100, 640.2, 527.4);
-        arreglocarrera[7] = c8;
-        Carrera c9 = new Carrera(21074, "Ingenieria Civil en Obras Civiles", 0.2, 0.2, 0.15, 0.35, 0.1, 450, 0, 100, 625, 476.1);
-        arreglocarrera[8] = c9;
-        Carrera c10 = new Carrera(21032, "Ingenieria en Construccion", 0.2, 0.2, 0.15, 0.35, 0.1, 450, 0, 100, 716.3, 476.95);
-        arreglocarrera[9] = c10;
-        Carrera c11 = new Carrera(21087, "Ingenieria Civil en Prevencion de Riesgos y Medioambiente", 0.15, 0.35, 0.2, 0.2, 0.1, 450, 0, 30, 615.2, 462.85);
-        arreglocarrera[10] = c11;
-        Carrera c12 = new Carrera(21073, "Ingenieria en Biotecnologia", 0.15, 0.25, 0.2, 0.3, 0.1, 450, 0, 60, 675.8, 540.9);
-        arreglocarrera[11] = c12;
-        Carrera c13 = new Carrera(21039, "Ingenieria en Industria Alimentaria", 0.15, 0.25, 0.2, 0.3, 0.1, 450, 0, 30, 680.2, 464.9);
-        arreglocarrera[12] = c13;
-        Carrera c14 = new Carrera(21080, "Ingenieria en Quimica", 0.1, 0.25, 0.15, 0.3, 0.2, 450, 0, 80, 606.55, 451.7);
-        arreglocarrera[13] = c14;
-        Carrera c15 = new Carrera(21083, "Quimica Industrial", 0.1, 0.25, 0.15, 0.3, 0.2, 450, 0, 40, 596.05, 472);
-        arreglocarrera[14] = c15;
-        Carrera c16 = new Carrera(21024, "Diseño en Comunicacion Visual", 0.1, 0.4, 0.3, 0.1, 0.1, 450, 0, 100, 706.3, 440.2);
-        arreglocarrera[15] = c16;
-        Carrera c17 = new Carrera(21023, "Diseño Industrial", 0.1, 0.4, 0.3, 0.1, 0.1, 450, 0, 65, 642.2, 439.9);
-        arreglocarrera[16] = c17;
-        Carrera c18 = new Carrera(21043, "Trabajo Social", 0.2, 0.3, 0.2, 0.1, 0.2, 450, 0, 95, 705.9, 510.5);
-        arreglocarrera[17] = c18;
-        Carrera c19 = new Carrera(21046, "Bachillerato en Ciencias de la Ingenieria", 0.1, 0.25, 0.2, 0.35, 0.1, 450, 0, 25, 586.45, 504.25);
-        arreglocarrera[18] = c19;
-        Carrera c20 = new Carrera(21071, "Dibujante Proyectista", 0.1, 0.25, 0.2, 0.35, 0.1, 450, 0, 25, 689.85, 496.45);
-        arreglocarrera[19] = c20;
-        Carrera c21 = new Carrera(21041, "Ingenieria Civil en Computacion, mencion Informatica", 0.1, 0.25, 0.2, 0.35, 0.1, 450, 0, 130, 673.65, 539.35);
-        arreglocarrera[20] = c21;
-        Carrera c22 = new Carrera(21076, "Ingenieria Civil Industrial", 0.1, 0.25, 0.2, 0.35, 0.1, 450, 0, 200, 671.25, 500.85);
-        arreglocarrera[21] = c22;
-        Carrera c23 = new Carrera(21049, "Ingenieria Civil en Ciencia de Datos", 0.1, 0.25, 0.2, 0.35, 0.1, 450, 0, 60, 673.65, 539.35);
-        arreglocarrera[22] = c23;
-        Carrera c24 = new Carrera(21075, "Ingenieria Civil Electronica", 0.1, 0.25, 0.2, 0.35, 0.1, 450, 0, 80, 657.35, 500.65);
-        arreglocarrera[23] = c24;
-        Carrera c25 = new Carrera(21096, "Ingenieria Civil en Mecanica", 0.1, 0.25, 0.2, 0.35, 0.1, 450, 0, 90, 697.65, 506.8);
-        arreglocarrera[24] = c25;
-        Carrera c26 = new Carrera(21031, "Ingenieria en Geomensura", 0.1, 0.25, 0.2, 0.35, 0.1, 450, 0, 60, 614.3, 487.85);
-        arreglocarrera[25] = c26;
-        Carrera c27 = new Carrera(21030, "Ingenieria en Informatica", 0.1, 0.25, 0.2, 0.35, 0.1, 450, 0, 105, 705.15, 507.75);
-        arreglocarrera[26] = c27;
-        Carrera c28 = new Carrera(21045, "Ingenieria Industrial", 0.1, 0.25, 0.2, 0.35, 0.1, 450, 0, 60, 584.75, 476.25);
-        arreglocarrera[27] = c28;*/
         //orden lugar tentativo
-        Carrera c1 = new Carrera(21076, "Ingenieria Civil Industrial", 0.1, 0.25, 0.2, 0.35, 0.1, 450, 0, 200, 671.25, 500.85);
+        Carrera c1 = new Carrera(21076, "Ingenieria Civil Industrial", 0.1, 0.25, 0.2, 0.35, 0.1, 200, 671.25, 500.85);
         arreglocarrera[0] = c1;
-        Carrera c2 = new Carrera(21041, "Ingenieria Civil en Computacion, mencion Informatica", 0.1, 0.25, 0.2, 0.35, 0.1, 450, 0, 130, 673.65, 539.35);
+        Carrera c2 = new Carrera(21041, "Ingenieria Civil en Computacion, mencion Informatica", 0.1, 0.25, 0.2, 0.35, 0.1, 130, 673.65, 539.35);
         arreglocarrera[1] = c2;
-        Carrera c3 = new Carrera(21047, "Arquitectura", 0.15, 0.25, 0.2, 0.2, 0.2, 450, 0, 100, 640.2, 527.4);
+        Carrera c3 = new Carrera(21047, "Arquitectura", 0.15, 0.25, 0.2, 0.2, 0.2, 100, 640.2, 527.4);
         arreglocarrera[2] = c3;
-        Carrera c4 = new Carrera(21048, "Ingenieria Comercial", 0.1, 0.2, 0.3, 0.3, 0.1, 450, 0, 125, 652.9, 496.9);
+        Carrera c4 = new Carrera(21048, "Ingenieria Comercial", 0.1, 0.2, 0.3, 0.3, 0.1, 125, 652.9, 496.9);
         arreglocarrera[3] = c4;
-        Carrera c5 = new Carrera(21074, "Ingenieria Civil en Obras Civiles", 0.2, 0.2, 0.15, 0.35, 0.1, 450, 0, 100, 625, 476.1);
+        Carrera c5 = new Carrera(21074, "Ingenieria Civil en Obras Civiles", 0.2, 0.2, 0.15, 0.35, 0.1, 100, 625, 476.1);
         arreglocarrera[4] = c5;
-        Carrera c6 = new Carrera(21045, "Ingenieria Industrial", 0.1, 0.25, 0.2, 0.35, 0.1, 450, 0, 60, 584.75, 476.25);
+        Carrera c6 = new Carrera(21045, "Ingenieria Industrial", 0.1, 0.25, 0.2, 0.35, 0.1, 60, 584.75, 476.25);
         arreglocarrera[5] = c6;
-        Carrera c7 = new Carrera(21030, "Ingenieria en Informatica", 0.1, 0.25, 0.2, 0.35, 0.1, 450, 0, 105, 705.15, 507.75);
+        Carrera c7 = new Carrera(21030, "Ingenieria en Informatica", 0.1, 0.25, 0.2, 0.35, 0.1, 105, 705.15, 507.75);
         arreglocarrera[6] = c7;
-        Carrera c8 = new Carrera(21080, "Ingenieria en Quimica", 0.1, 0.25, 0.15, 0.3, 0.2, 450, 0, 80, 606.55, 451.7);
+        Carrera c8 = new Carrera(21080, "Ingenieria en Quimica", 0.1, 0.25, 0.15, 0.3, 0.2, 80, 606.55, 451.7);
         arreglocarrera[7] = c8;
-        Carrera c9 = new Carrera(21075, "Ingenieria Civil Electronica", 0.1, 0.25, 0.2, 0.35, 0.1, 450, 0, 80, 657.35, 500.65);
+        Carrera c9 = new Carrera(21075, "Ingenieria Civil Electronica", 0.1, 0.25, 0.2, 0.35, 0.1, 80, 657.35, 500.65);
         arreglocarrera[8] = c9;
-        Carrera c10 = new Carrera(21081, "Ingenieria en Comercio Internacional", 0.1, 0.2, 0.3, 0.3, 0.1, 450, 0, 90, 637.2, 458.8);
+        Carrera c10 = new Carrera(21081, "Ingenieria en Comercio Internacional", 0.1, 0.2, 0.3, 0.3, 0.1, 90, 637.2, 458.8);
         arreglocarrera[9] = c10;
-        Carrera c11 = new Carrera(21043, "Trabajo Social", 0.2, 0.3, 0.2, 0.1, 0.2, 450, 0, 95, 705.9, 510.5);
+        Carrera c11 = new Carrera(21043, "Trabajo Social", 0.2, 0.3, 0.2, 0.1, 0.2, 95, 705.9, 510.5);
         arreglocarrera[10] = c11;
-        Carrera c12 = new Carrera(21031, "Ingenieria en Geomensura", 0.1, 0.25, 0.2, 0.35, 0.1, 450, 0, 60, 614.3, 487.85);
+        Carrera c12 = new Carrera(21031, "Ingenieria en Geomensura", 0.1, 0.25, 0.2, 0.35, 0.1, 60, 614.3, 487.85);
         arreglocarrera[11] = c12;
-        Carrera c13 = new Carrera(21096, "Ingenieria Civil en Mecanica", 0.1, 0.25, 0.2, 0.35, 0.1, 450, 0, 90, 697.65, 506.8);
+        Carrera c13 = new Carrera(21096, "Ingenieria Civil en Mecanica", 0.1, 0.25, 0.2, 0.35, 0.1, 90, 697.65, 506.8);
         arreglocarrera[12] = c13;
-        Carrera c14 = new Carrera(21049, "Ingenieria Civil en Ciencia de Datos", 0.1, 0.25, 0.2, 0.35, 0.1, 450, 0, 60, 673.65, 539.35);
+        Carrera c14 = new Carrera(21049, "Ingenieria Civil en Ciencia de Datos", 0.1, 0.25, 0.2, 0.35, 0.1, 60, 673.65, 539.35);
         arreglocarrera[13] = c14;
-        Carrera c15 = new Carrera(21073, "Ingenieria en Biotecnologia", 0.15, 0.25, 0.2, 0.3, 0.1, 450, 0, 60, 675.8, 540.9);
+        Carrera c15 = new Carrera(21073, "Ingenieria en Biotecnologia", 0.15, 0.25, 0.2, 0.3, 0.1, 60, 675.8, 540.9);
         arreglocarrera[14] = c15;
-        Carrera c16 = new Carrera(21012, "Contador Publico y Auditor", 0.2, 0.2, 0.3, 0.15, 0.15, 450, 0, 80, 635.55, 452.2);
+        Carrera c16 = new Carrera(21012, "Contador Publico y Auditor", 0.2, 0.2, 0.3, 0.15, 0.15, 80, 635.55, 452.2);
         arreglocarrera[15] = c16;
-        Carrera c17 = new Carrera(21032, "Ingenieria en Construccion", 0.2, 0.2, 0.15, 0.35, 0.1, 450, 0, 100, 716.3, 476.95);
+        Carrera c17 = new Carrera(21032, "Ingenieria en Construccion", 0.2, 0.2, 0.15, 0.35, 0.1, 100, 716.3, 476.95);
         arreglocarrera[16] = c17;
-        Carrera c18 = new Carrera(21024, "Diseño en Comunicacion Visual", 0.1, 0.4, 0.3, 0.1, 0.1, 450, 0, 100, 706.3, 440.2);
+        Carrera c18 = new Carrera(21024, "Diseño en Comunicacion Visual", 0.1, 0.4, 0.3, 0.1, 0.1, 100, 706.3, 440.2);
         arreglocarrera[17] = c18;
-        Carrera c19 = new Carrera(21083, "Quimica Industrial", 0.1, 0.25, 0.15, 0.3, 0.2, 450, 0, 40, 596.05, 472);
+        Carrera c19 = new Carrera(21083, "Quimica Industrial", 0.1, 0.25, 0.15, 0.3, 0.2, 40, 596.05, 472);
         arreglocarrera[18] = c19;
-        Carrera c20 = new Carrera(21023, "Diseño Industrial", 0.1, 0.4, 0.3, 0.1, 0.1, 450, 0, 65, 642.2, 439.9);
+        Carrera c20 = new Carrera(21023, "Diseño Industrial", 0.1, 0.4, 0.3, 0.1, 0.1, 65, 642.2, 439.9);
         arreglocarrera[19] = c20;
-        Carrera c21 = new Carrera(21089, "Administracion Publica", 0.15, 0.2, 0.3, 0.25, 0.1, 450, 0, 35, 625.8, 513);
+        Carrera c21 = new Carrera(21089, "Administracion Publica", 0.15, 0.2, 0.3, 0.25, 0.1, 35, 625.8, 513);
         arreglocarrera[20] = c21;
-        Carrera c22 = new Carrera(21046, "Bachillerato en Ciencias de la Ingenieria", 0.1, 0.25, 0.2, 0.35, 0.1, 450, 0, 25, 586.45, 504.25);
+        Carrera c22 = new Carrera(21046, "Bachillerato en Ciencias de la Ingenieria", 0.1, 0.25, 0.2, 0.35, 0.1, 25, 586.45, 504.25);
         arreglocarrera[21] = c22;
-        Carrera c23 = new Carrera(21087, "Ingenieria Civil en Prevencion de Riesgos y Medioambiente", 0.15, 0.35, 0.2, 0.2, 0.1, 450, 0, 30, 615.2, 462.85);
+        Carrera c23 = new Carrera(21087, "Ingenieria Civil en Prevencion de Riesgos y Medioambiente", 0.15, 0.35, 0.2, 0.2, 0.1, 30, 615.2, 462.85);
         arreglocarrera[22] = c23;
-        Carrera c24 = new Carrera(21015, "Ingenieria en Administracion Agroindustrial", 0.1, 0.2, 0.3, 0.3, 0.1, 450, 0, 30, 628.8, 461.8);
+        Carrera c24 = new Carrera(21015, "Ingenieria en Administracion Agroindustrial", 0.1, 0.2, 0.3, 0.3, 0.1, 30, 628.8, 461.8);
         arreglocarrera[23] = c24;
-        Carrera c25 = new Carrera(21002, "Bibliotecologia y Documentacion", 0.2, 0.2, 0.4, 0.1, 0.1, 450, 0, 35, 675.3, 453.6);
+        Carrera c25 = new Carrera(21002, "Bibliotecologia y Documentacion", 0.2, 0.2, 0.4, 0.1, 0.1, 35, 675.3, 453.6);
         arreglocarrera[24] = c25;
-        Carrera c26 = new Carrera(21039, "Ingenieria en Industria Alimentaria", 0.15, 0.25, 0.2, 0.3, 0.1, 450, 0, 30, 680.2, 464.9);
+        Carrera c26 = new Carrera(21039, "Ingenieria en Industria Alimentaria", 0.15, 0.25, 0.2, 0.3, 0.1, 30, 680.2, 464.9);
         arreglocarrera[25] = c26;
-        Carrera c27 = new Carrera(21071, "Dibujante Proyectista", 0.1, 0.25, 0.2, 0.35, 0.1, 450, 0, 25, 689.85, 496.45);
+        Carrera c27 = new Carrera(21071, "Dibujante Proyectista", 0.1, 0.25, 0.2, 0.35, 0.1, 25, 689.85, 496.45);
         arreglocarrera[26] = c27;
-        Carrera c28 = new Carrera(21082, "Ingenieria en Gestion Turistica", 0.1, 0.2, 0.3, 0.3, 0.1, 450, 0, 25, 659.4, 448.1);
+        Carrera c28 = new Carrera(21082, "Ingenieria en Gestion Turistica", 0.1, 0.2, 0.3, 0.3, 0.1, 25, 659.4, 448.1);
         arreglocarrera[27] = c28;
         return arreglocarrera;
     }
@@ -201,7 +145,7 @@ public class escribir {
             fila_n = 0;
             Sheet hoja = book.createSheet(String.valueOf(arreglocarrera[i].getNombre())); // Se crea la hoja de la carrera
             Row fila = hoja.createRow(fila_n); // Se crea fila para ingresar datos, donde actualmente será la primera fila
-            fila.createCell(0).setCellValue("N°"); 
+            fila.createCell(0).setCellValue("N°"); //Primera columna: numero de postulado en la carrera
             fila.createCell(1).setCellValue("Rut");//segunda columna: Ruts de los alumnos que están siendo matriculados
             fila.createCell(2).setCellValue("Ponderación"); // tercera columna: Puntaje final de los alumnos que lograron conseguir en la PSU
             fila_n++;
@@ -210,8 +154,8 @@ public class escribir {
                     for(int j = 0; j < a1.size() ; j++){ // Recorro la lista de alumnos que está entrando a la carrera
                         Alumno x = a1.get(j); // Se extraer los datos de un alumno
                         fila = hoja.createRow(fila_n); // Se crea una fila en la posicion fila_n
-                        fila.createCell(0).setCellValue(j+1); // Se escribe el rut del alumno
-                        fila.createCell(1).setCellValue(x.getRut());
+                        fila.createCell(0).setCellValue(j+1); // Se escribe el lugar de postulacion  del alumno
+                        fila.createCell(1).setCellValue(x.getRut());//Se escribe el el rut del alumno
                         fila.createCell(2).setCellValue(x.getPonderacionesfinales().get(0).getPuntajefinal());
                         // Se escribe el puntaje de la carrera que está postulando de mayor conveniencia 
                         fila_n++; // Se avanza para la siguiente fila
@@ -223,7 +167,7 @@ public class escribir {
                     for(int j = 0; j < a2.size() ; j++){
                         Alumno x = a2.get(j);
                         fila = hoja.createRow(fila_n);
-                        fila.createCell(0).setCellValue(j+1); // Se escribe el rut del alumno
+                        fila.createCell(0).setCellValue(j+1); 
                         fila.createCell(1).setCellValue(x.getRut());
                         fila.createCell(2).setCellValue(x.getPonderacionesfinales().get(0).getPuntajefinal());
                         fila_n++;
@@ -234,7 +178,7 @@ public class escribir {
                     for(int j = 0; j < a3.size() ; j++){
                         Alumno x = a3.get(j);
                         fila = hoja.createRow(fila_n);
-                        fila.createCell(0).setCellValue(j+1); // Se escribe el rut del alumno
+                        fila.createCell(0).setCellValue(j+1); 
                         fila.createCell(1).setCellValue(x.getRut());
                         fila.createCell(2).setCellValue(x.getPonderacionesfinales().get(0).getPuntajefinal());
                         fila_n++;
@@ -245,7 +189,7 @@ public class escribir {
                     for(int j = 0; j < a4.size() ; j++){
                         Alumno x = a4.get(j);
                         fila = hoja.createRow(fila_n);
-                        fila.createCell(0).setCellValue(j+1); // Se escribe el rut del alumno
+                        fila.createCell(0).setCellValue(j+1); 
                         fila.createCell(1).setCellValue(x.getRut());
                         fila.createCell(2).setCellValue(x.getPonderacionesfinales().get(0).getPuntajefinal());
                         fila_n++;
@@ -256,7 +200,7 @@ public class escribir {
                     for(int j = 0; j < a5.size() ; j++){
                         Alumno x = a5.get(j);
                         fila = hoja.createRow(fila_n);
-                        fila.createCell(0).setCellValue(j+1); // Se escribe el rut del alumno
+                        fila.createCell(0).setCellValue(j+1); 
                         fila.createCell(1).setCellValue(x.getRut());
                         fila.createCell(2).setCellValue(x.getPonderacionesfinales().get(0).getPuntajefinal());
                         fila_n++;
@@ -267,7 +211,7 @@ public class escribir {
                     for(int j = 0; j < a6.size() ; j++){
                         Alumno x = a6.get(j);
                         fila = hoja.createRow(fila_n);
-                        fila.createCell(0).setCellValue(j+1); // Se escribe el rut del alumno
+                        fila.createCell(0).setCellValue(j+1); 
                         fila.createCell(1).setCellValue(x.getRut());
                         fila.createCell(2).setCellValue(x.getPonderacionesfinales().get(0).getPuntajefinal());
                         fila_n++;
@@ -278,7 +222,7 @@ public class escribir {
                     for(int j = 0; j < a7.size() ; j++){
                         Alumno x = a7.get(j);
                         fila = hoja.createRow(fila_n);
-                        fila.createCell(0).setCellValue(j+1); // Se escribe el rut del alumno
+                        fila.createCell(0).setCellValue(j+1); 
                         fila.createCell(1).setCellValue(x.getRut());
                         fila.createCell(2).setCellValue(x.getPonderacionesfinales().get(0).getPuntajefinal());
                         fila_n++;
@@ -289,7 +233,7 @@ public class escribir {
                     for(int j = 0; j < a8.size() ; j++){
                         Alumno x = a8.get(j);
                         fila = hoja.createRow(fila_n);
-                        fila.createCell(0).setCellValue(j+1); // Se escribe el rut del alumno
+                        fila.createCell(0).setCellValue(j+1); 
                         fila.createCell(1).setCellValue(x.getRut());
                         fila.createCell(2).setCellValue(x.getPonderacionesfinales().get(0).getPuntajefinal());
                         fila_n++;
@@ -300,7 +244,7 @@ public class escribir {
                     for(int j = 0; j < a9.size() ; j++){
                         Alumno x = a9.get(j);
                         fila = hoja.createRow(fila_n);
-                        fila.createCell(0).setCellValue(j+1); // Se escribe el rut del alumno
+                        fila.createCell(0).setCellValue(j+1); 
                         fila.createCell(1).setCellValue(x.getRut());
                         fila.createCell(2).setCellValue(x.getPonderacionesfinales().get(0).getPuntajefinal());
                         fila_n++;
@@ -311,7 +255,7 @@ public class escribir {
                     for(int j = 0; j < a10.size() ; j++){
                         Alumno x = a10.get(j);
                         fila = hoja.createRow(fila_n);
-                        fila.createCell(0).setCellValue(j+1); // Se escribe el rut del alumno
+                        fila.createCell(0).setCellValue(j+1); 
                         fila.createCell(1).setCellValue(x.getRut());
                         fila.createCell(2).setCellValue(x.getPonderacionesfinales().get(0).getPuntajefinal());
                         fila_n++;
@@ -322,7 +266,7 @@ public class escribir {
                     for(int j = 0; j < a11.size() ; j++){
                         Alumno x = a11.get(j);
                         fila = hoja.createRow(fila_n);
-                        fila.createCell(0).setCellValue(j+1); // Se escribe el rut del alumno
+                        fila.createCell(0).setCellValue(j+1);
                         fila.createCell(1).setCellValue(x.getRut());
                         fila.createCell(2).setCellValue(x.getPonderacionesfinales().get(0).getPuntajefinal());
                         fila_n++;
@@ -333,7 +277,7 @@ public class escribir {
                     for(int j = 0; j < a12.size() ; j++){
                         Alumno x = a12.get(j);
                         fila = hoja.createRow(fila_n);
-                        fila.createCell(0).setCellValue(j+1); // Se escribe el rut del alumno
+                        fila.createCell(0).setCellValue(j+1); 
                         fila.createCell(1).setCellValue(x.getRut());
                         fila.createCell(2).setCellValue(x.getPonderacionesfinales().get(0).getPuntajefinal());
                         fila_n++;
@@ -344,7 +288,7 @@ public class escribir {
                     for(int j = 0; j < a13.size() ; j++){
                         Alumno x = a13.get(j);
                         fila = hoja.createRow(fila_n);
-                        fila.createCell(0).setCellValue(j+1); // Se escribe el rut del alumno
+                        fila.createCell(0).setCellValue(j+1); 
                         fila.createCell(1).setCellValue(x.getRut());
                         fila.createCell(2).setCellValue(x.getPonderacionesfinales().get(0).getPuntajefinal());
                         fila_n++;
@@ -355,7 +299,7 @@ public class escribir {
                     for(int j = 0; j < a14.size() ; j++){
                         Alumno x = a14.get(j);
                         fila = hoja.createRow(fila_n);
-                        fila.createCell(0).setCellValue(j+1); // Se escribe el rut del alumno
+                        fila.createCell(0).setCellValue(j+1); 
                         fila.createCell(1).setCellValue(x.getRut());
                         fila.createCell(2).setCellValue(x.getPonderacionesfinales().get(0).getPuntajefinal());
                         fila_n++;
@@ -366,7 +310,7 @@ public class escribir {
                     for(int j = 0; j < a15.size() ; j++){
                         Alumno x = a15.get(j);
                         fila = hoja.createRow(fila_n);
-                        fila.createCell(0).setCellValue(j+1); // Se escribe el rut del alumno
+                        fila.createCell(0).setCellValue(j+1); 
                         fila.createCell(1).setCellValue(x.getRut());
                         fila.createCell(2).setCellValue(x.getPonderacionesfinales().get(0).getPuntajefinal());
                         fila_n++;
@@ -377,7 +321,7 @@ public class escribir {
                     for(int j = 0; j < a16.size() ; j++){
                         Alumno x = a16.get(j);
                         fila = hoja.createRow(fila_n);
-                        fila.createCell(0).setCellValue(j+1); // Se escribe el rut del alumno
+                        fila.createCell(0).setCellValue(j+1); 
                         fila.createCell(1).setCellValue(x.getRut());
                         fila.createCell(2).setCellValue(x.getPonderacionesfinales().get(0).getPuntajefinal());
                         fila_n++;
@@ -388,7 +332,7 @@ public class escribir {
                     for(int j = 0; j < a17.size() ; j++){
                         Alumno x = a17.get(j);
                         fila = hoja.createRow(fila_n);
-                        fila.createCell(0).setCellValue(j+1); // Se escribe el rut del alumno
+                        fila.createCell(0).setCellValue(j+1); 
                         fila.createCell(1).setCellValue(x.getRut());
                         fila.createCell(2).setCellValue(x.getPonderacionesfinales().get(0).getPuntajefinal());
                         fila_n++;
@@ -399,7 +343,7 @@ public class escribir {
                     for(int j = 0; j < a18.size() ; j++){
                         Alumno x = a18.get(j);
                         fila = hoja.createRow(fila_n);
-                        fila.createCell(0).setCellValue(j+1); // Se escribe el rut del alumno
+                        fila.createCell(0).setCellValue(j+1); 
                         fila.createCell(1).setCellValue(x.getRut());
                         fila.createCell(2).setCellValue(x.getPonderacionesfinales().get(0).getPuntajefinal());
                         fila_n++;
@@ -410,7 +354,7 @@ public class escribir {
                     for(int j = 0; j < a19.size() ; j++){
                         Alumno x = a19.get(j);
                         fila = hoja.createRow(fila_n);
-                        fila.createCell(0).setCellValue(j+1); // Se escribe el rut del alumno
+                        fila.createCell(0).setCellValue(j+1); 
                         fila.createCell(1).setCellValue(x.getRut());
                         fila.createCell(2).setCellValue(x.getPonderacionesfinales().get(0).getPuntajefinal());
                         fila_n++;
@@ -421,7 +365,7 @@ public class escribir {
                     for(int j = 0; j < a20.size() ; j++){
                         Alumno x = a20.get(j);
                         fila = hoja.createRow(fila_n);
-                        fila.createCell(0).setCellValue(j+1); // Se escribe el rut del alumno
+                        fila.createCell(0).setCellValue(j+1); 
                         fila.createCell(1).setCellValue(x.getRut());
                         fila.createCell(2).setCellValue(x.getPonderacionesfinales().get(0).getPuntajefinal());
                         fila_n++;
@@ -432,7 +376,7 @@ public class escribir {
                     for(int j = 0; j < a21.size() ; j++){
                         Alumno x = a21.get(j);
                         fila = hoja.createRow(fila_n);
-                        fila.createCell(0).setCellValue(j+1); // Se escribe el rut del alumno
+                        fila.createCell(0).setCellValue(j+1); 
                         fila.createCell(1).setCellValue(x.getRut());
                         fila.createCell(2).setCellValue(x.getPonderacionesfinales().get(0).getPuntajefinal());
                         fila_n++;
@@ -443,7 +387,7 @@ public class escribir {
                     for(int j = 0; j < a22.size() ; j++){
                         Alumno x = a22.get(j);
                         fila = hoja.createRow(fila_n);
-                        fila.createCell(0).setCellValue(j+1); // Se escribe el rut del alumno
+                        fila.createCell(0).setCellValue(j+1); 
                         fila.createCell(1).setCellValue(x.getRut());
                         fila.createCell(2).setCellValue(x.getPonderacionesfinales().get(0).getPuntajefinal());
                         fila_n++;
@@ -454,7 +398,7 @@ public class escribir {
                     for(int j = 0; j < a23.size() ; j++){
                         Alumno x = a23.get(j);
                         fila = hoja.createRow(fila_n);
-                        fila.createCell(0).setCellValue(j+1); // Se escribe el rut del alumno
+                        fila.createCell(0).setCellValue(j+1); 
                         fila.createCell(1).setCellValue(x.getRut());
                         fila.createCell(2).setCellValue(x.getPonderacionesfinales().get(0).getPuntajefinal());
                         fila_n++;
@@ -465,7 +409,7 @@ public class escribir {
                     for(int j = 0; j < a24.size() ; j++){
                         Alumno x = a24.get(j);
                         fila = hoja.createRow(fila_n);
-                        fila.createCell(0).setCellValue(j+1); // Se escribe el rut del alumno
+                        fila.createCell(0).setCellValue(j+1); 
                         fila.createCell(1).setCellValue(x.getRut());
                         fila.createCell(2).setCellValue(x.getPonderacionesfinales().get(0).getPuntajefinal());
                         fila_n++;
@@ -476,7 +420,7 @@ public class escribir {
                     for(int j = 0; j < a25.size() ; j++){
                         Alumno x = a25.get(j);
                         fila = hoja.createRow(fila_n);
-                        fila.createCell(0).setCellValue(j+1); // Se escribe el rut del alumno
+                        fila.createCell(0).setCellValue(j+1); 
                         fila.createCell(1).setCellValue(x.getRut());
                         fila.createCell(2).setCellValue(x.getPonderacionesfinales().get(0).getPuntajefinal());
                         fila_n++;
@@ -487,7 +431,7 @@ public class escribir {
                     for(int j = 0; j < a26.size() ; j++){
                         Alumno x = a26.get(j);
                         fila = hoja.createRow(fila_n);
-                        fila.createCell(0).setCellValue(j+1); // Se escribe el rut del alumno
+                        fila.createCell(0).setCellValue(j+1); 
                         fila.createCell(1).setCellValue(x.getRut());
                         fila.createCell(2).setCellValue(x.getPonderacionesfinales().get(0).getPuntajefinal());
                         fila_n++;
@@ -498,7 +442,7 @@ public class escribir {
                     for(int j = 0; j < a27.size() ; j++){
                         Alumno x = a27.get(j);
                         fila = hoja.createRow(fila_n);
-                        fila.createCell(0).setCellValue(j+1); // Se escribe el rut del alumno
+                        fila.createCell(0).setCellValue(j+1); 
                         fila.createCell(1).setCellValue(x.getRut());
                         fila.createCell(2).setCellValue(x.getPonderacionesfinales().get(0).getPuntajefinal());
                         fila_n++;
@@ -509,7 +453,7 @@ public class escribir {
                     for(int j = 0; j < a28.size() ; j++){
                         Alumno x = a28.get(j);
                         fila = hoja.createRow(fila_n);
-                        fila.createCell(0).setCellValue(j+1); // Se escribe el rut del alumno
+                        fila.createCell(0).setCellValue(j+1); 
                         fila.createCell(1).setCellValue(x.getRut());
                         fila.createCell(2).setCellValue(x.getPonderacionesfinales().get(0).getPuntajefinal());
                         fila_n++;
@@ -518,7 +462,7 @@ public class escribir {
                     break;
             }
         }
-        FileOutputStream fileout = new FileOutputStream("excelpruebasoap10mil.xlsx");
+        FileOutputStream fileout = new FileOutputStream("excelsoap10mil.xlsx"); //se le da el nombre al archivo generado
         book.write(fileout);
         fileout.close();
         book.close();
@@ -538,7 +482,7 @@ public class escribir {
                         entro = 1; // Alumno ya entró en las nominas de posibles matriculados
                     }
                     else{ // En caso de no haber más cupos
-                        Alumno entrante2 = a1.get(a1.size()-1); // Se compara el ultimo posible alumno que puede entrar
+                        Alumno entrante2 = a1.get(a1.size()-1); // Se guarda el ultimo posible alumno que puede entrar
                         if(entrante.getPonderacionesfinales().get(0).getPuntajefinal() > entrante2.getPonderacionesfinales().get(0).getPuntajefinal()){
                             a1.set(a1.size()-1, entrante); // El ultimo alumno que pudiera entrar es reemplazado
                             entro = 1; // Alumno ya entró en las nominas de posibles matriculados
@@ -1143,18 +1087,18 @@ public class escribir {
                 for(int a=0; a<28; a++){ // Se recorre las carreras
                     double ponderadofinal = calculoponderacion(arreglocarrera[a],nem, ranking, matematica,lenguaje,ciencia,historia);
                     // Se obtiene el ponderacion final obtenido
-                    if(ponderadofinal > arreglocarrera[a].getPrimerpuntaje()){
-                        diferencia = ponderadofinal;
-                        Ponderacion carreraPonderada = new Ponderacion(diferencia, ponderadofinal, a);
-                        listaponderacion.add(carreraPonderada);
+                    if(ponderadofinal > arreglocarrera[a].getPrimerpuntaje()){//se verifica si supera al primer alumno ingresado en la carrera el 2019
+                        diferencia = ponderadofinal; //se almacena el ponderado para utilizarlo como diferancia, la cual servira para ordenar por prioridad
+                        Ponderacion carreraPonderada = new Ponderacion(diferencia, ponderadofinal, a); //se crea un tipo ponderacion
+                        listaponderacion.add(carreraPonderada); //se agrega los datos al arreglo
                     }
                     else{
-                        diferencia = ponderadofinal - arreglocarrera[a].getUltimopuntaje();
+                        diferencia = ponderadofinal - arreglocarrera[a].getUltimopuntaje();//se calcula la diferencia que hay entre el puntaje obtenido del alumno y el ultimo ingresado en la carrera el 2019
                         Ponderacion carreraPonderada = new Ponderacion(diferencia, ponderadofinal, a);
                         listaponderacion.add(carreraPonderada);
                     } 
                 }
-                Alumno entrante = new Alumno(rut, listaponderacion);
+                Alumno entrante = new Alumno(rut, listaponderacion); //se crea un tipo alumno
                 listaponderacion.clear(); // Se vacia el arreglo creado
                 entrante.ordenarPonderaciones(); // Se deja ordenado antes de analizar y/o agregar alumnos en alguna carrera
                 desplazamientoAlumno(entrante);   

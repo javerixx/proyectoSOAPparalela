@@ -10,14 +10,12 @@ public class Carrera { //Clase carrera
     double plenguaje; //e, Porcentaje de puntaje lenguaje de la carrera
     double pmatematica; //f, Porcentaje de puntaje matematica de la carrera
     double pcienciahistoria; //g, Porcentaje de puntaje ciencia/historia de la carrera
-    double puntajeprom; //h, Puntaje promedio minimo de postulación PSU entre lenguaje y matemática
-    double puntajeminimo; //i, Puntaje mínimo ponderado, claramente UTEM no cuenta con ello
     int vacantes; //j, Cantidad de vacantes
     double primerpuntaje; //k, Primer puntaje matriculado
     double ultimopuntaje; //l, Ultimo puntaje matriculado
 
     //Constructor necesario
-    public Carrera(int a, String b, double d, double e, double f, double g, double k, double h, double i, int j, double m, double l) {
+    public Carrera(int a, String b, double d, double e, double f, double g, double k,  int j, double m, double l) {
         codigo = a;
         nombre = b;
         pnem = d;
@@ -25,8 +23,6 @@ public class Carrera { //Clase carrera
         plenguaje = f;
         pmatematica = g;
         pcienciahistoria = k;
-        puntajeprom = h;
-        puntajeminimo = i;
         vacantes = j;
         primerpuntaje = m;
         ultimopuntaje = l;
@@ -58,14 +54,6 @@ public class Carrera { //Clase carrera
 
     public double getPcienciahistoria() {
         return pcienciahistoria;
-    }
-
-    public double getPuntajeprom() {
-        return puntajeprom;
-    }
-
-    public double getPuntajeminimo() {
-        return puntajeminimo;
     }
 
     public int getVacantes() {
