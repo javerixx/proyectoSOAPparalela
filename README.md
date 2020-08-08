@@ -8,7 +8,7 @@ _Este proyecto consiste en levantar un servidor que sigue el protocolo SOAP,_
 _lo cual se debe ingresar el nombre, tipo mime y contenido en base64. Este_
 _programa es un OpenSource construido con lenguaje java, y para levantar_
 _el servidor se utiliza Apache Tomcat. Solo es compatible con Ubuntu y el_
-_tipo mime que se exige es **txt/csv**._
+_tipo mime que se exige es **text/csv**._
 
 _El programa consiste en la simulación de PSU para ingresos de carreras de la UTEM,_
 _lo cual permite generar en un archivo xlsx, que contiene un listado de alumnos que están_
@@ -24,7 +24,7 @@ _su nombre indica._
 ```
 sudo apt-get install openjdk-8-jdk
 ```
-* Tener instalado Apache Tomcat, se podra descargar [aqui](https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.27/bin/)
+* Tener instalado Apache Tomcat, se podra descargar [aqui](https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.27/bin/).
 
 ### Ejecución del programa 🔧
 
@@ -32,19 +32,17 @@ _Para ejecutar el programa, se debe seguir los siguientes pasos manualmente:_
 
 _1) Posicionarse en la carpeta o directorio del Apache Tomcat._
    _Por defecto, puede ser la carpeta **apache-tomcat-8.0.27**_
-   
-_2) Crear una carpeta o directorio dentro de la carpeta **webapps**._
-   _por defecto se nombra como **soapparalela**._
-   
-_3) Se descomprime el archivo soapparalela.war en la carpeta creada._
 
-_4) Desde la carpeta de Apache Tomcat, se debe ingresar el siguiente_
-   _comando para activar el servidor:_
+_2) Copiar el archivo **soaparalela.war**, que se encuentra en la carpeta **dist** del proyecto,_
+    _y pegarlo dentro de la carpeta **webapps**._
+
+_3) Desde el terminal, posicionado en la carpeta o directorio del Apache Tomcat,_
+   _se debe ingresar el siguiente comando para activar el servidor:_
 ```
 bin/startup.sh
 ```
 
-_5) Por último, se debe abrir un navegador e ingresar el siguiente link,_
+_4) Por último, se debe abrir un navegador e ingresar el siguiente link,_
    _con el fin de verificar su funcionamiento:_ 
    
    **http://localhost:8080/soapparalela/carreras**
